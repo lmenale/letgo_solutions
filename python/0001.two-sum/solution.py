@@ -9,7 +9,16 @@ from leetgo_py import *
 
 class Solution:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
-        
+        # Hashmap (dictionary) to store values and their indices
+        prevMap = {} # val : index
+
+        # Loop through each number in the array
+        for index, x in enumerate(nums) :
+            # x + y = target -> diff{y} = target - x
+            diff = target - x
+            if diff in prevMap:
+                return [prevMap[diff], index]
+            prevMap[x] = index
 
 # @lc code=end
 
