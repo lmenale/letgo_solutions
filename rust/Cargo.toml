@@ -1,6 +1,14 @@
 [[bin]]
+name = 'interview'
+path = 'src/0000.interview/solution.rs'
+
+[[bin]]
 name = 'two-sum'
 path = 'src/0001.two-sum/solution.rs'
+
+[[bin]]
+name = 'roman-to-integer'
+path = 'src/0013.roman-to-integer/solution.rs'
 
 [dependencies]
 anyhow = '1.0.79'
